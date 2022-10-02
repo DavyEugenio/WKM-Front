@@ -6,11 +6,10 @@ let baseUrl = "http://localhost:8080",
 verifyUser(homeUrl);
 getUser();
 
-getUser();
 async function getUser() {
     try {
         admin = await findLoggedUser();
-        nomeField.innerHTML = admin.nome;
+        nomeField.innerHTML = admin.nome.split(" ")[0];
     } catch {
     }
 }
