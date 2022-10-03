@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Login - SB Admin</title>
-        <link href="css/styles.css" rel="stylesheet" />
+        <title>Password Reset - SB Admin</title>
+        <link href="../../css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="bg-primary">
@@ -18,20 +18,17 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-5">
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Recuperação de Senha</h3></div>
                                     <div class="card-body">
+                                        <div class="small mb-3 text-muted">Insira o endereço de email para envio do link de recuperação.</div>
                                         <form id="dataForm">
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputEmail" type="email" placeholder="Email" name="email" />
-                                                <label for="inputEmail">Email</label>
-                                            </div>
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputPassword" type="password" placeholder="Senha" name="senha"/>
-                                                <label for="inputPassword">Senha</label>
+                                                <input class="form-control" name="email" type="email" placeholder="Email" />
+                                                <label for="email">Email</label>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a class="small" href="recovery/password">Esqueceu a senha?</a>
-                                                <input class="btn btn-primary" type="submit" value="Login" />
+                                                <a class="small" href="../../">Voltar ao login</a>
+                                                <input class="btn btn-primary" type="submit" value="Recuperar Senha"/>
                                             </div>
                                         </form>
                                     </div>
@@ -41,13 +38,11 @@
                     </div>
                 </main>
             </div>
-            <div include-html="templates/footer.html"></div>
+            <div include-html="../../templates/footer.html"></div>
         </div>
-        <script src="js/utils/include-html.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/utils/errorhandler.js"></script>
-        <script src="js/utils/verifyUser.js"></script>
-        <script src="js/login.js"></script>
+        <script src="../../js/utils/errorhandler.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="../../js/scripts.js"></script>
     </body>
 </html>
